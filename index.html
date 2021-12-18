@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <div class="promo">
+        <video class="video-bg" autoplay muted loop >  
+            <source src="Video/Sunrise - 83880.mp4" type="video/mp4"/>
+        </video>
+        <div class="product-name">
+            <span>LevelUp</span>
+        </div>
+        <div class="product-name-row">
+            <div class="product-name-row__list">
+               <ul class="list">
+                    <li>Organic</li>
+                    <li>Affordable</li>
+                    <li>Fast</li>
+               </ul>
+            </div>
+            <div class="product-name-row__button">
+                <button>Order</button>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content__ingredients-one">
+            <div class="content__ingredients-one__1">
+                <div class="content-ingredients__img">
+                    
+                </div>
+                <span>ingredient1</span>
+            </div>
+            <div class="content__ingredients-one__2">
+                <div class="content-ingredients__img">
+                    
+                </div>
+                <span>ingredient2</span>
+            </div>
+            <div class="content__ingredients-one__3">
+                <div class="content-ingredients__img">
+                    
+                </div>
+                <span>ingredient3</span>
+            </div>
+        </div>
+        <div class="photo-product">
+            <img src="images/prod.png" alt="prod" width="100" height="150"/>
+        </div>
+        <div class="content__ingredients-two">
+            <div class="content__ingredients-one__4">
+                <div class="content-ingredients__img">
+                    
+                </div>
+                <span>ingredient4</span>
+            </div>
+            <div class="content__ingredients-one__5">
+                <div class="content-ingredients__img">
+                    
+                </div>
+                <span>ingredient5</span>
+            </div>
+            <div class="content__ingredients-one__6">
+                <div class="content-ingredients__img">
+                    
+                </div>
+                <span>ingredient6</span>
+            </div>
+        </div>
+    </div>
+    <div class="feedback">
+        <div class="carousel swiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide card">
+                <img src="https://i.pravatar.cc/300?img=3" width="300" height="300" alt=""/>
+                <div class="card-name">Alex Wilson</div>
+                <div class="feedback-rewievs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aspernatur molestias. Ipsam!</div>
+            </div>
+            <div class="swiper-slide card">
+                <img src="https://i.pravatar.cc/300?img=6" width="300" height="300" alt=""/>
+                <div class="card-name">Mathew Twos</div>
+                <div class="feedback-rewievs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit vero tempora.</div>
+            </div>
+            <div class="swiper-slide card">
+                <img src="https://i.pravatar.cc/300?img=8" width="300" height="300" alt=""/>
+                <div class="card-name">Levone Jane</div>
+                <div class="feedback-rewievs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellat voluptas maxime aliquid!</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="promo-two">
+        <div class="product-name__row">
+            <div class="product-name__row__list">
+               <ul class="list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+               </ul>
+            </div>
+            <div class="product-name__row__button">
+                <button>Order</button>
+            </div>
+        </div>
+        <div class="product-name">
+            <span>LevelUp</span>
+        </div> 
+    </div>
+    <div class="form">
+        <div class="form-name"></div>
+        <div class="form-timer"></div>
+        <div class="form-block">
+            <div class="form-block__one">
+                <div class="form-block__img">
+                </div>
+                <div class="form-block__prices"></div>
+            </div>
+            <div class="form-block__two" id="form">
+                <form>
+                    <div class="input-container">
+                    <input type="text" id="name-input" placeholder="name"/>
+                    <div id="name">Vasiliy</div>
+                    
+                    </div>
+                    <div class="input-container">
+                    <div id="phone"></div>
+                    <input type="phone"  placeholder="phone"/>
+                    </div>
+                    <input type="submit" placeholder="name"/> 
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper( ".carousel",{
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation:{
+                nextEl: ".right",
+                prevEl: ".left"
+            }
+        })
+    </script>
+</body>
+</html>
