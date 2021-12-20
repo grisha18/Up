@@ -31,26 +31,36 @@ function allowOnlyDigits() {
   this.value = this.getAttribute('current-value');
 }
 
+var timer;
 
+  function backTime(minutes, seconds) {
+    var seconds = 60;
+    var mins = minutes
 
-let timer; 
-let x = 1800;
+    function tick() {
 
+      var current_minutes = mins - 1
+      seconds--;
+      formTimer.innerHTML =
+        current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
+      if (seconds > 0) {
+        timer = setTimeout(tick, 1000);
+      } else {
 
-backtime(); 
+        if (mins > 1) {
 
-function backtime(){
+          setTimeout(function() {
+            backTime(mins - 1);
+          }, 1000);
 
-     formTimer.innerHTML = x;  
-        x--;
+        }
+      }
+    }
+    tick();
+  }
 
-	if (x < 0) {
-	    clearTimeout(timer);
-	}
-	else {
-	    timer = setTimeout(backtime, 1000);
-	}
-}
+ backTime(30);
+
 
 
 
